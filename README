@@ -1,0 +1,30 @@
+Placeholder jQuery Plugin v0.3b
+-------------------------------
+Copyright (c) 2011 Shahal Tharique. Licensed under MIT License
+
+
+Overview
+--------
+
+A simple jQuery plugin that overrides the input box's placeholder attribute. 
+
+
+Usage
+-----
+
+// Include the jquery.js and jquery.placeholder.js in your html file.
+
+<script type='text/javascript' src='jquery.js'></script> 
+<script type='text/javascript' src='jquery.placeholder.js'></script>
+
+
+// Add the required placeholder value to the placeholder attribute of the input box. 
+
+<input type='text' name='username' placeholder='Username' class='jquery-placeholder-test' />
+
+//Now call the .placeholder() function on the required input box's jQuery object.
+
+$(document).ready(function(){
+	$('.jquery-placeholder-test').placeholder();
+})
+
