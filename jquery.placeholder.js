@@ -13,6 +13,10 @@ jQuery.fn.placeholder = function(){
 		element.bind("keydown",updateSpanStatus);
 		element.bind("keyup",updateSpanStatusKeyUp);
 		insertedNow.bind("click",clickSpanBox);
+		if(element.val()!=="")
+		{
+			insertedNow.css({'opacity':0});
+		}
 		
 	});
 	function clickSpanBox(event){
